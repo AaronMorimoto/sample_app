@@ -34,6 +34,6 @@ class ListsController < ApplicationController
   private
   # ストロングパラメータ--"マスアサインメント脆弱性"を防ぐ
   def list_params
-    params.require(:list).permit(:title, :body)
+    params.require(:list).permit(:title, :body, :image)
   end
 end
